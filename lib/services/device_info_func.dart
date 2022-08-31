@@ -14,7 +14,7 @@ Future<Map> initPlatformState() async {
       deviceData = _readIosData(await deviceInfoPlugin.iosInfo);
     }
   } on PlatformException {
-    deviceData = {'error:': 'Failed to get  as Objectplatform version'};
+    deviceData = {'error:': 'Failed to get platform version'};
   }
 
   return deviceData;
